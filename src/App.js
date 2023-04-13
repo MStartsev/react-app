@@ -25,7 +25,16 @@ function App() {
       <h2>Hello</h2>
 
       <button onClick={(event) => main()}>Click me! POST</button>
-      <button onClick={(event) => hashTBase()}>Click me! randNo</button>
+      <button
+        onClick={(event) =>
+          hashTBase({
+            login: "aa@zrn.com.ua",
+            pass: "password",
+          })
+        }
+      >
+        Click me! randNo
+      </button>
       <img
         src="https://drive.google.com/uc?export=view&id=1-O9jGiRvEFrKT9PYL7TrRMZEvyI-udv9"
         className="img"
